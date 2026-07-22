@@ -1,1 +1,127 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google 1998 Beta</title>
+    <style>
+        /* 1. TÜM SAYFA (BODY) */
+        body {
+            background-color: white;
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+        }
 
+        /* 2. LOGO KUTUSU:*/
+        .logo-container {
+            margin-top: 30px; /* Üstten biraz boşluk bırakalım */
+        }
+        
+        .logo-container img {
+             width: 300px; /* Logo boyutunu ayarlıyoruz */
+        }
+
+        /* 3. ARAMA KUTUSU: Metin alanı ve butonların düzenlenmesi */
+        .search-container {
+            margin-top: 20px;
+        }
+
+        .search-container p {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        
+        /* 4. TURKUAZ ALT MENÜ (FOOTER) */
+        .footer-box {
+            background-color: #66CCCC; 
+            width: 80%; /* Sayfanın tamamını kaplamasın, ortada bir blok olsun */
+            margin: 30px auto; /* Yukarıdan/aşağıdan 30px boşluk bırakır, sağdan/soldan 'auto' diyerek kutuyu sayfanın tam ortasına yerleştirir */
+            padding: 10px; /* Kutu ile içindeki yazılar arasına boşluk (Box Model) */
+            border-top: 1px solid #000; /* Kutunun üstüne ince siyah bir çizgi çeker */
+            border-bottom: 1px solid #000; /* Kutunun altına ince siyah bir çizgi çeker */
+            display: flex; /* İÇİNDEKİ SÜTUNLARI YAN YANA DİZMEK İÇİN KOD */
+            justify-content: space-around; /* Yan yana dizilen 3 sütunun arasına eşit boşluk bırakır */
+            align-items: flex-start; /* Sütunların içindeki yazıların hepsinin aynı hizada (üstten) başlamasını sağlar */
+        }
+
+        /* 5. SÜTUNLAR (İç Kutular): Flex özelliği sayesinde yan yana dizilecekler */
+        .column {
+           text-align: left; /* Sütunların içindeki yazıları sola dayıyoruz */
+           font-size: 13px; /* Yazı boyutunu küçültüyoruz */
+        }
+        
+        /* Sağ sütundaki form elemanlarını biraz küçültelim */
+        .column p {
+            margin: 0 0 5px 0; /* Sadece alt kısımdan boşluk bırak */
+        }
+
+        /* 6. LİNKLER: Tüm a etiketlerinin rengi ve alt çizgisi */
+        a {
+            color: blue;
+            text-decoration: underline; /* 1998'de linklerin her zaman altı çiziliydi! */
+        }
+
+        /* 7. COPYRIGHT KISMI: En alttaki küçük yazı */
+        .copyright {
+            font-size: 11px;
+            color: #666; /* Gri renk */
+            margin-top: 20px;
+        }
+        /* Kutuların Arka Plan Renkleri */
+        .sol-kutu {
+            background-color: #a3e4d7; /* En açık ton */
+        }
+        
+        .orta-kutu {
+            background-color: #76d7c4; /* Orta ton */
+        }
+        
+        .sag-kutu {
+            background-color: #48c9b0; /* Koyu ton */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="logo-container">
+        <img src="https://web.archive.org/web/19990504011207im_/http://www.google.com/google.jpg" alt="Google! Beta Logo">
+    </div>
+
+    <div class="search-container">
+        <p>Search the web using Google!</p>
+        <input type="text" size="40">
+        <br><br>
+        <button>Google Search</button>
+        <button>I'm feeling lucky</button>
+    </div>
+
+    <div class="footer-box">
+        
+        <div class="column sol-kutu">
+            <a href="#">Stanford Search</a><br>
+            <a href="#">Linux Search</a>
+        </div>
+
+        <div class="column orta-kutu">
+            <a href="#">Help!</a><br>
+            <a href="#">About Google!</a><br>
+            <a href="#">Company Info</a><br>
+            <a href="#">Google! Logos</a>
+        </div>
+
+        <div class="column sag-kutu">
+            <p>Get Google! updates monthly:</p>
+            <input type="text" value="your e-mail">
+            <button>Subscribe</button>
+            <a href="#">Archive</a>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        <p>Copyright ©1998 Google Inc.</p>
+    </div>
+
+</body>
+</html>
