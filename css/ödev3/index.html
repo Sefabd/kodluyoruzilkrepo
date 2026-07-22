@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <style>
+        /* 1. TÜM SAYFA (BODY): */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Sayfa yüksekliğini en az ekran boyutu kadar yap */
+        }
+
+        /* 2. ÜST MENÜ (Header) */
+        .header {
+            display: flex;
+            justify-content: flex-end; /* İçindekileri sağa it */
+            align-items: center;
+            padding: 15px;
+            font-size: 13px;
+        }
+
+        .header a {
+            text-decoration: none; /* Alt çizgiyi kaldır */
+            color: black;
+            margin-right: 15px;
+        }
+
+        /* Profil Fotoğrafı - Yuvarlak yapma  */
+        .profile-pic {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%; 
+            object-fit: cover;
+        }
+
+        /* 3. ANA İÇERİK (Logo ve Arama kısmı) */
+        .main {
+            flex-grow: 1; /* Ortadaki boşluğu kapla */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Yatayda ortala */
+            justify-content: center; /* Dikeyde ortala */
+            margin-top: -100px; /* Optik olarak biraz yukarı çekelim */
+        }
+
+        .logo {
+            width: 272px;
+            margin-bottom: 25px;
+        }
+
+        /* 4. ARAMA KUTUSU: Modern, yuvarlak hatlı ve gölgeli */
+        .search-box {
+            display: flex;
+            align-items: center;
+            width: 582px;
+            height: 44px;
+            border: 1px solid #dfe1e5;
+            border-radius: 24px;  
+            padding: 0 20px;
+        }
+
+        /* Arama kutusuna fareyle gelindiğinde (hover) gölge ekle */
+        .search-box:hover {
+            box-shadow: 0 1px 6px rgba(32,33,36,.28);
+            border-color: rgba(223,225,229,0);
+        }
+
+        .search-input {
+            flex-grow: 1; /* Input alanının aradaki tüm boşluğu doldurmasını sağlar */
+            border: none;
+            outline: none; /* Tıklayınca çıkan  siyah çizgiyi yok eder */
+            font-size: 16px;
+            margin: 0 10px;
+        }
+
+        /* 5. BUTONLAR: */
+        .buttons {
+            margin-top: 18px;
+        }
+
+        .buttons button {
+            background-color: #f8f9fa;
+            border: 1px solid #f8f9fa; 
+            border-radius: 4px;
+            color: #5f6368; 
+            font-family: Arial, sans-serif; 
+            font-size: 14px; 
+            height: 36px; 
+            margin: 11px 4px; 
+            padding: 0 16px;
+            cursor: pointer; /* Üzerine gelince fare imlecini el işaretine çevirir */
+        }
+
+        /* Butonlara tıklandığında veya üzerine gelindiğinde gölge ekle */
+        .buttons button:hover {
+            border: 1px solid #c6c6c6;
+            box-shadow: 0 1px 1px rgba(0,0,0,.1);
+            color: #202124;
+        }
+
+        /* 6. ALT MENÜ (Footer)*/
+        .footer {
+            background-color: #f2f2f2; 
+            color: #70757a;
+            font-size: 15px;
+            display: flex;
+            justify-content: space-between; /* İki listeyi sağa ve sola yaslar */
+            padding: 15px 30px;
+            border-top: 1px solid #dadce0;
+        }
+
+        .footer-links {
+            display: flex;
+            list-style-type: none; /* Liste noktalarını ortadan kaldırır */
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin-right: 20px;
+        }
+
+        .footer-links a {
+            color: #70757a;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <a href="#">Gmail</a>
+        <a href="#">Images</a>
+        <img class="profile-pic" src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png" alt="Profil">
+    </div>
+
+    <div class="main">
+        <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+        
+        <div class="search-box">
+            <span>🔍</span> <input class="search-input" type="text">
+            <span>🎤</span> </div>
+
+        <div class="buttons">
+            <button>Google Search</button>
+            <button>I'm Feeling Lucky</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <ul class="footer-links">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Advertising</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">How Search works</a></li>
+        </ul>
+        <ul class="footer-links" style="justify-content: flex-end;">
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>
