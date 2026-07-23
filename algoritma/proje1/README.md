@@ -28,7 +28,7 @@ Selection Sort tüm dizideki en küçük elemanı bulup, sıradaki indeks ile ye
 * **Başlangıç:** [7, 3, 5, 8, 2, 9, 4, 15, 6] 
 * **1. Adım:** Dizideki en küçük sayı 2'dirEn baştaki 7 ile yer değiştirir: [2, 3, 5, 8, 7, 9, 4, 15, 6] 
 * **2.Adım:** Geri kalanlar arasındaki en küçük sayı 3'türZaten ikinci sırada olduğu için yeri değişmez: [2, 3, 5, 8, 7, 9, 4, 15, 6] 
-* **3. [cite_start]Adım:** Geri kalanlar arasındaki en küçük sayı 4'türÜçüncü sıradaki 5 ile yer değiştirir: [2, 3, 4, 8, 7, 9, 5, 15, 6] 
-* **4. [cite_start]Adım:** Geri kalanlar arasındaki en küçük sayı 5'tir. Dördüncü sıradaki 8 ile yer değiştirir: [2, 3, 4, 5, 7, 9, 8, 15, 6] 
+* **3. Adım:** Geri kalanlar arasındaki en küçük sayı 4'türÜçüncü sıradaki 5 ile yer değiştirir: [2, 3, 4, 8, 7, 9, 5, 15, 6] 
+* **4.Adım:** Geri kalanlar arasındaki en küçük sayı 5'tir. Dördüncü sıradaki 8 ile yer değiştirir: [2, 3, 4, 5, 7, 9, 8, 15, 6] 
 
 ---
