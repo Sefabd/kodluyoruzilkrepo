@@ -1,15 +1,15 @@
-# [cite_start]Proje 1: Insertion Sort ve Selection Sort [cite: 631]
+# Proje 1: Insertion Sort ve Selection Sort 
 
-[cite_start]Insertion (Araya Ekleme) Sort, diziyi sanki elinde iskambil kağıtlarını sıraya diziyormuşsun gibi soldan sağa doğru okuyup, her elemanı solundaki sayılarla karşılaştırarak araya sokuşturma işlemidir[cite: 631].
+Insertion (Araya Ekleme) Sort, diziyi sanki elinde iskambil kağıtlarını sıraya diziyormuşsun gibi soldan sağa doğru okuyup, her elemanı solundaki sayılarla karşılaştırarak araya sokuşturma işlemidir
 
-## [cite_start]Soru 1: [22, 27, 16, 2, 18, 6] dizisinin Insertion Sort aşamaları [cite: 632]
+## Soru 1: [22, 27, 16, 2, 18, 6] dizisinin Insertion Sort aşamaları 
 
-* [cite_start]**Başlangıç:** [22, 27, 16, 2, 18, 6] [cite: 632]
-* **1. Adım:** İkinci eleman (27), 22'den büyük olduğu için yeri değişmez. [cite_start][22, 27, 16, 2, 18, 6] [cite: 632, 633]
-* **2. [cite_start]Adım:** Üçüncü eleman (16), 27 ve 22'den küçüktür[cite: 633]. İkisinin de soluna, yani en başa geçer. [cite_start][16, 22, 27, 2, 18, 6] [cite: 634, 635]
-* **3. [cite_start]Adım:** Dördüncü eleman (2), tüm sıralı gruptan (16, 22, 27) küçüktür[cite: 635]. En başa yerleşir. [cite_start][2, 16, 22, 27, 18, 6] [cite: 635, 636]
-* **4. [cite_start]Adım:** Beşinci eleman (18), 16'dan büyük, 22 ve 27'den küçüktür[cite: 636]. 16 ile 22 arasına girer. [cite_start][2, 16, 18, 22, 27, 6] [cite: 636, 637]
-* **5. [cite_start]Adım (Son):** Altıncı eleman (6), 2'den büyük, 16'dan küçüktür[cite: 637]. [cite_start]2 ile 16 arasına girer[cite: 637]. [cite_start]**Sıralanmış Hali:** [2, 6, 16, 18, 22, 27] [cite: 638]
+* **Başlangıç:** [22, 27, 16, 2, 18, 6] 
+* **1. Adım:** İkinci eleman (27), 22'den büyük olduğu için yeri değişmez. [22, 27, 16, 2, 18, 6] 
+* **2. Adım:** Üçüncü eleman (16), 27 ve 22'den küçüktür[cite: 633]. İkisinin de soluna, yani en başa geçer. [16, 22, 27, 2, 18, 6]
+* **3. Adım:** Dördüncü eleman (2), tüm sıralı gruptan (16, 22, 27) küçüktür[cite: 635]. En başa yerleşir. [2, 16, 22, 27, 18, 6] 
+* **4. Adım:** Beşinci eleman (18), 16'dan büyük, 22 ve 27'den küçüktür[cite: 636]. 16 ile 22 arasına girer. [2, 16, 18, 22, 27, 6] 
+* **5. Adım (Son):** Altıncı eleman (6), 2'den büyük, 16'dan küçüktür[cite: 637]. [cite_start]2 ile 16 arasına girer. **Sıralanmış Hali:** [2, 6, 16, 18, 22, 27] 
 
 ## Soru 2: Big-O Gösterimi
 
