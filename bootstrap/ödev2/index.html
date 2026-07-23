@@ -1,1 +1,153 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Klonu</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
+    <style>
+        body {
+            background-color: #fafafa;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top bg-white border-bottom" style="height: 54px;">
+        <div class="container d-flex justify-content-between align-items-center">
+            
+            <a class="navbar-brand" href="#" style="margin-left: 192px;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1200px-Instagram_logo.svg.png" alt="Instagram Logo" height="30">
+            </a>
+
+            <form class="form-inline d-flex ml-5 d-none d-sm-block"> 
+                <div class="input-group input-group-sm">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text bg-light border-right-0"><i class="fas fa-search text-muted"></i></span>
+                    </div>
+                    <input type="text" class="form-control bg-light border-left-0 text-center" placeholder="Ara" style="width: 200px;">
+                </div>
+            </form>
+
+            <div class="navbar-nav flex-row ml-5 mt-2 d-none d-sm-flex" style="font-size: 22px;">
+                <a class="nav-item nav-link text-dark mr-3" href="#"><i class="fas fa-home"></i></a>
+                <a class="nav-item nav-link text-dark mr-3" href="#"><i class="fab fa-facebook-messenger"></i></a>
+                <a class="nav-item nav-link text-dark mr-3" href="#"><i class="far fa-compass"></i></a>
+                <a class="nav-item nav-link text-dark mr-3" href="#"><i class="far fa-heart"></i></a>
+                <a class="nav-item nav-link text-dark" href="#"><i class="fas fa-user-circle"></i></a>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <div style="padding-top: 80px;">
+        
+        <div class="container mt-2">
+            <div class="row offset-lg-2"> 
+
+                <div class="col-12 col-md-6">
+                    
+                    <div class="card mb-3">
+                        <div class="card-body d-flex justify-content-start overflow-auto">
+                            <div class="text-center mr-3">
+                                <img src="https://via.placeholder.com/60" class="rounded-circle border border-danger p-1" alt="Hikaye">
+                                <small class="d-block mt-1 text-muted">hakan...</small>
+                            </div>
+                            <div class="text-center mr-3">
+                                <img src="https://via.placeholder.com/60" class="rounded-circle border border-danger p-1" alt="Hikaye">
+                                <small class="d-block mt-1 text-muted">kodlu...</small>
+                            </div>
+                            <div class="text-center mr-3">
+                                <img src="https://via.placeholder.com/60" class="rounded-circle border border-danger p-1" alt="Hikaye">
+                                <small class="d-block mt-1 text-muted">furka...</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                            <div>
+                                <img src="https://via.placeholder.com/30" class="rounded-circle mr-2" alt="Profil">
+                                <strong>cengizcmataraci</strong>
+                            </div>
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                        
+                        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Gönderi Resmi">
+                        
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between mb-2" style="font-size: 24px;">
+                                <div>
+                                    <i class="far fa-heart mr-3"></i>
+                                    <i class="far fa-comment mr-3"></i>
+                                    <i class="far fa-paper-plane"></i>
+                                </div>
+                                <i class="far fa-bookmark"></i>
+                            </div>
+                            
+                            <p class="mb-1"><strong>cengizcmataraci</strong> ve <strong>670 diğer kişi</strong> beğendi</p>
+                            <p class="mb-1"><strong>kodluyoruz</strong> Barış Balta ile AWS Quick Start Etkinliği #1...</p>
+                            <p class="text-muted mb-1" style="font-size: 14px;">60 yorumun tümünü gör</p>
+                            
+                            <div class="border-top pt-3 d-flex justify-content-between">
+                                <input type="text" class="form-control border-0 bg-transparent" placeholder="Yorum Ekle..." style="box-shadow: none;">
+                                <a href="#" class="text-primary font-weight-bold" style="text-decoration: none;">Paylaş</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> 
+
+                <div class="col-md-4 d-none d-md-block">
+                    <div class="sticky-top bg-white border-0" style="top: 80px; padding: 20px;">
+                        
+                        <div class="d-flex align-items-center mb-4">
+                            <img src="https://via.placeholder.com/50" class="rounded-circle mr-3" alt="Profil">
+                            <div>
+                                <strong class="d-block">cengizcmataraci</strong>
+                                <span class="text-muted">Cengiz C. Mataracı</span>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex justify-content-between mb-3">
+                            <span class="text-muted font-weight-bold">Senin İçin Öneriler</span>
+                            <a href="#" class="text-dark font-weight-bold" style="font-size: 14px; text-decoration: none;">Tümünü Gör</a>
+                        </div>
+                        
+                        <ul class="list-unstyled">
+                            <li class="d-flex justify-content-between align-items-center mb-3">
+                                <div class="d-flex align-items-center">
+                                    <img src="https://via.placeholder.com/35" class="rounded-circle mr-2" alt="Öneri">
+                                    <strong>kablosuzbeyin</strong>
+                                </div>
+                                <a href="#" class="text-primary font-weight-bold" style="font-size: 12px; text-decoration: none;">Takip Et</a>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center mb-3">
+                                <div class="d-flex align-items-center">
+                                    <img src="https://via.placeholder.com/35" class="rounded-circle mr-2" alt="Öneri">
+                                    <strong>codecraftcom</strong>
+                                </div>
+                                <a href="#" class="text-primary font-weight-bold" style="font-size: 12px; text-decoration: none;">Takip Et</a>
+                            </li>
+                        </ul>
+                        
+                        <div class="mt-4 text-muted" style="font-size: 12px;">
+                            <a href="#" class="text-muted text-decoration-none">Hakkında</a> · 
+                            <a href="#" class="text-muted text-decoration-none">Yardım</a> · 
+                            <a href="#" class="text-muted text-decoration-none">Basın</a>
+                            <p class="mt-3">© 2021 INSTAGRAM FROM KODLUYORUZ</p>
+                        </div>
+
+                    </div>
+                </div> 
+
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
